@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-pale-orange">
+  <div class=" flex flex-col gap-7">
+    <div class="flex justify-between bg-soft-red p-4 rounded-xl text-white">
+      <div>
+        <h3 class="font-sans text-xs font-light pb-1">My balance</h3>
+        <h2 class="font-bold text-xl">$921.48</h2>
+      </div>
+      <div class="flex items-center">
+        <img class="max-w-12"src="/images/logo.svg" alt="">
+      </div>
+    </div>
+    <div class="bg-white p-8 rounded-xl">
+      <div>
+        <h1 class="text-2xl font-bold pb-7">Spending - Last 7 days</h1>
+        <canvas class="pb-4"id="myChart" width="300" height="150"></canvas>
+        <hr class="pb-4">
+      </div>
+      <div class="flex justify-between">
+        <div>
+          <p class="text-xs text-brown">Total this month</p>
+          <h1 class="text-3xl font-bold pt-1">$478.33</h1>
+        </div>
+      
+        <div class="flex flex-col items-end justify-end pb-1">
+          <p class="text-xs">+2.4%</p>
+          <p class="text-xs text-brown">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>
