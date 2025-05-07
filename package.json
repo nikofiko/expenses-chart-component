@@ -4,5 +4,9 @@
   },
   "dependencies": {
     "chart.js": "^4.4.6"
+  },
+  "scripts": {
+  "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css",
+  "watch:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   }
 }
